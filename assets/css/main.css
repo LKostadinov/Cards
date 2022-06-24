@@ -30,13 +30,6 @@ h1 {
   height: 100%;
 }
 
-h3,
-p {
-  color: white;
-  margin-top: 2em;
-  text-align: left;
-}
-
 .cards {
   border: 4px solid white;
   width: 22%;
@@ -292,6 +285,7 @@ p {
 
 .fourth-card-inner p {
   font-style: italic;
+  color: white;
   font-size: 16px;
   padding: 16px;
   margin-top: 0;
@@ -323,8 +317,9 @@ p {
 
 .witcher-content {
   position: absolute;
-  top: 5%;
+  top: 25%;
   padding: 24px;
+  font-size: 14px;
   margin-top: 0;
   pointer-events: none;
   opacity: 0;
@@ -364,6 +359,321 @@ p {
 .sixth-card {
   width: 22%;
   height: 450px;
+  border: 2px solid white;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  background-image: url("../img/profile.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.sixth-card:hover {
+  background-image: none;
+  background-color: white;
+}
+
+.sixth-card-top-flex {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  opacity: 0;
+}
+
+.sixth-card-profile-img {
+  width: 100px;
+  height: 100px;
+  clip-path: circle(50% at 50% 50%);
+  margin-top: 8px;
+}
+
+.sixth-card-profile-info {
+  padding: 1em 0 1em 2em;
+  line-height: 1em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 24px;
+}
+
+.sixth-card-introduction {
+  padding: 8px 16px;
+  font-size: 14px;
+  opacity: 0;
+}
+
+.sixth-card-introduction p {
+  padding-top: 8px;
+}
+
+.sixth-card:hover .sixth-card-introduction {
+  opacity: 1;
+  transition: 1.3s;
+}
+
+.sixth-card:hover .sixth-card-bottom-flex {
+  opacity: 1;
+  transition: 1.3s;
+}
+
+.sixth-card-name {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  font-size: 32px;
+  color: white;
+}
+
+.sixth-card:hover .sixth-card-name {
+  opacity: 0;
+}
+
+.sixth-card:hover .sixth-card-speciality {
+  opacity: 0;
+}
+
+.sixth-card-speciality {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  color: white;
+}
+
+.sixth-card:hover .sixth-card-top-flex {
+  opacity: 1;
+  transition: 1.3s;
+}
+
+.sixth-card-bottom-flex {
+  display: flex;
+  padding: 4px 16px;
+  font-size: 14px;
+  opacity: 0;
+}
+
+.left-side {
+  width: 50%;
+}
+
+.github-icon {
+  width: 30px;
+  height: 30px;
+  clip-path: circle(50% at 50% 50%);
+  margin-top: 10px;
+}
+
+.right-side {
+  width: 50%;
+}
+
+.social-media-icons {
+  display: flex;
+}
+
+.linked-in {
+  width: 50px;
+  height: 35px;
+  clip-path: circle(38% at 50% 50%);
+  margin-top: 10px;
+}
+
+.email {
+  width: 30px;
+  height: 30px;
+  clip-path: circle(50% at 50% 50%);
+  margin-top: 12px;
+}
+
+.phone {
+  margin-left: 0;
+  width: 50px;
+  height: 30px;
+  clip-path: circle(40% at 50% 50%);
+  margin-top: 12px;
+}
+
+/* Sixth Card End */
+
+/* Seventh Card Start */
+
+.seventh-card {
+  width: 22%;
+  height: 450px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  background-image: url("../img/by-front.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 60px #fdc026;
+}
+
+.seventh-card-inner {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: -1;
+  background-color: white;
+}
+
+.seventh-card-inner img {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  width: 220px;
+  height: 40px;
+}
+
+.seventh-card h2 {
+  font-size: 100px;
+}
+
+.s-letter {
+  position: absolute;
+  top: 23%;
+  left: 15%;
+  z-index: 1;
+  transform: rotate(32deg);
+}
+
+.v-letter {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  z-index: 1;
+  transform: rotate(37deg);
+}
+
+.seventh-card:hover .s-letter {
+  transform: none;
+  top: 0%;
+  left: 5%;
+  transition: 1s;
+  transform: rotate(-360deg);
+}
+
+.seventh-card:hover .v-letter {
+  transform: none;
+  top: 75%;
+  left: 75%;
+  transition: 1s;
+  transform: rotate(360deg);
+}
+
+.s-span {
+  color: rgb(35, 35, 35);
+}
+
+.v-span {
+  color: #fdc026;
+}
+
+.clip-one {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 42%;
+  left: 39%;
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    10% 90%,
+    90% 10%,
+    80% 0%,
+    50% 30%
+  );
+  background-color: rgb(35, 35, 35);
+  z-index: 1;
+  transform: rotate(-10deg);
+}
+
+.seventh-card:hover .clip-one {
+  position: absolute;
+  top: 7%;
+  left: 22%;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-405deg);
+  transition: 1s;
+}
+
+.clip-two {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 42%;
+  left: 39%;
+  clip-path: polygon(
+    10% 90%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    90% 10%
+  );
+  background-color: #fdc026;
+  z-index: 1;
+  transform: rotate(-10deg);
+}
+
+.seventh-card:hover .clip-two {
+  position: absolute;
+  top: 88%;
+  left: 67%;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-405deg);
+  transition: 1s;
+}
+
+.seventh-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  background-color: #fdc026;
+}
+
+.seventh-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 4px 4px 0;
+  clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+  background-color: rgb(35, 35, 35);
+}
+
+.seventh-card:hover::before {
+  clip-path: polygon(0 0, 0 50%, 50% 0);
+  transition: 1s;
+}
+
+.seventh-card:hover::after {
+  clip-path: polygon(100% 100%, 50% 100%, 100% 50%);
+  transition: 1s;
+}
+
+/* Seventh Card End */
+
+/* Eight Card Start */
+
+.eight-card {
+  width: 22%;
+  height: 450px;
   border-radius: 8px;
   position: relative;
   cursor: pointer;
@@ -372,7 +682,7 @@ p {
   background-size: cover;
 }
 
-.sixth-card::before {
+.eight-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -383,7 +693,7 @@ p {
   background-image: linear-gradient(45deg, #ffeb3b, #e91e63);
 }
 
-.sixth-card::after {
+.eight-card::after {
   content: "";
   position: absolute;
   top: 0;
@@ -394,31 +704,33 @@ p {
   background-image: linear-gradient(-45deg, #ffeb3b, #e91e63);
 }
 
-.sixth-card:hover::before {
+.eight-card:hover::before {
   transform: translateX(-150px);
   opacity: 0;
   transition: 1.2s;
+  pointer-events: none;
 }
 
-.sixth-card:hover::after {
+.eight-card:hover::after {
   transform: translateX(150px);
   transition: 1.2s;
   opacity: 0;
+  pointer-events: none;
 }
 
-.sixth-card-title {
+.eight-card-title {
   position: absolute;
   z-index: 1;
   color: white;
   font-size: 32px;
-  top: 32%;
+  top: 45%;
   left: 21%;
   pointer-events: none;
 }
 
-.sixth-card:hover .sixth-card-title {
+.eight-card:hover .eight-card-title {
   opacity: 0;
   transition: 0.6s;
 }
 
-/* Sixth Card End */
+/* Eight Card End */
