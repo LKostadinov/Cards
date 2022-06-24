@@ -679,6 +679,7 @@ h1 {
   cursor: pointer;
   pointer-events: all;
   background-color: rgb(39, 160, 56);
+  border: 2px solid #c4c4c4;
 }
 
 .eight-card img {
@@ -705,6 +706,7 @@ h1 {
   height: 100%;
   border-radius: 8px;
   background-color: rgb(39, 160, 56);
+  border: 2px solid #c4c4c4;
   opacity: 0;
 }
 
@@ -717,6 +719,7 @@ h1 {
   height: 100%;
   border-radius: 8px;
   background-color: rgb(39, 160, 56);
+  border: 2px solid #c4c4c4;
   opacity: 0;
 }
 
